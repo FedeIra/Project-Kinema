@@ -139,7 +139,7 @@ export default function UserProfile() {
   };
 
   const downgrade = async () => {
-    setStateButton(false)
+    setStateButton(false);
     const id = userData.stripeId;
     const { data } = await axios.post('/payment/downgrade', { id });
     if (data.success) {
@@ -270,8 +270,8 @@ export default function UserProfile() {
   const handleOpenWidget = async () => {
     var myWidget = window.cloudinary.createUploadWidget(
       {
-        cloudName: 'ddhpexcoe',
-        uploadPreset: 'prueba',
+        cloudName: 'dhhqqbh70',
+        uploadPreset: 'KinemaPreset',
       },
       (error, result) => {
         if (!error && result && result.event === 'success') {
@@ -318,20 +318,20 @@ export default function UserProfile() {
         justifyContent={'space-between'}
         background={'#111111'}
         marginBottom={'5vh'}
-        shadow="0px 0.5px 8px #444444"
+        shadow='0px 0.5px 8px #444444'
       >
         <NavBarPayment />
         <Flex alignItems={'center'}></Flex>
       </Flex>
 
       <Flex justify={'center'}>
-        <VStack justify="center">
+        <VStack justify='center'>
           <Tabs
-            size="md"
-            variant="enclosed"
+            size='md'
+            variant='enclosed'
             className={style.tabla_user}
             border={'black'}
-            bgGradient="linear(to-b, #222222, #333333)"
+            bgGradient='linear(to-b, #222222, #333333)'
             borderRadius={'5px'}
             overflow={'hidden'}
             color={'white'}
@@ -384,15 +384,15 @@ export default function UserProfile() {
                         >
                           {/* CSS files for react-slick */}
                           <link
-                            rel="stylesheet"
-                            type="text/css"
-                            charSet="UTF-8"
-                            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+                            rel='stylesheet'
+                            type='text/css'
+                            charSet='UTF-8'
+                            href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
                           />
                           <link
-                            rel="stylesheet"
-                            type="text/css"
-                            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+                            rel='stylesheet'
+                            type='text/css'
+                            href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
                           />
                           {/* Left Icon */}
                           {/* Right Icon */}
@@ -417,8 +417,8 @@ export default function UserProfile() {
                                     maxW={'260px'}
                                     key={index}
                                     m={'1vh'}
-                                    mt="1vh"
-                                    transition="0.4s"
+                                    mt='1vh'
+                                    transition='0.4s'
                                     _hover={{
                                       transform: 'scale(1.07)',
                                       transition: '0.8s',
@@ -426,7 +426,7 @@ export default function UserProfile() {
                                   >
                                     <RouteLink
                                       to={`/home/tv_show_details/${r.id}`}
-                                      position="relative"
+                                      position='relative'
                                       w={'250px'}
                                     >
                                       <Image
@@ -434,7 +434,7 @@ export default function UserProfile() {
                                           'https://image.tmdb.org/t/p/w300' +
                                           r.posterImg
                                         }
-                                        borderRadius="0.5vh"
+                                        borderRadius='0.5vh'
                                       ></Image>
                                     </RouteLink>
                                   </Box>
@@ -445,8 +445,8 @@ export default function UserProfile() {
                                     maxW={'260px'}
                                     key={index}
                                     m={'1vh'}
-                                    mt="1vh"
-                                    transition="0.4s"
+                                    mt='1vh'
+                                    transition='0.4s'
                                     _hover={{
                                       transform: 'scale(1.07)',
                                       transition: '0.8s',
@@ -454,7 +454,7 @@ export default function UserProfile() {
                                   >
                                     <RouteLink
                                       to={`/home/movie_details/${r.id}`}
-                                      position="relative"
+                                      position='relative'
                                       w={'250px'}
                                     >
                                       <Image
@@ -462,7 +462,7 @@ export default function UserProfile() {
                                           'https://image.tmdb.org/t/p/w300' +
                                           r.posterImg
                                         }
-                                        borderRadius="0.5vh"
+                                        borderRadius='0.5vh'
                                       ></Image>
                                     </RouteLink>
                                   </Box>
@@ -495,7 +495,7 @@ export default function UserProfile() {
                           >
                             Go to{' '}
                             <Button variant={'link'} color={' #2ecc71 '}>
-                              <RouteLink to="/home">EXPLORE</RouteLink>
+                              <RouteLink to='/home'>EXPLORE</RouteLink>
                             </Button>
                           </Text>
                         </Box>
@@ -512,15 +512,15 @@ export default function UserProfile() {
                         >
                           {/* CSS files for react-slick */}
                           <link
-                            rel="stylesheet"
-                            type="text/css"
-                            charSet="UTF-8"
-                            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+                            rel='stylesheet'
+                            type='text/css'
+                            charSet='UTF-8'
+                            href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
                           />
                           <link
-                            rel="stylesheet"
-                            type="text/css"
-                            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+                            rel='stylesheet'
+                            type='text/css'
+                            href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
                           />
                           {/* Left Icon */}
                           {/* Right Icon */}
@@ -545,8 +545,8 @@ export default function UserProfile() {
                                     maxW={'260px'}
                                     key={index}
                                     m={'1vh'}
-                                    mt="1vh"
-                                    transition="0.4s"
+                                    mt='1vh'
+                                    transition='0.4s'
                                     _hover={{
                                       transform: 'scale(1.07)',
                                       transition: '0.8s',
@@ -554,7 +554,7 @@ export default function UserProfile() {
                                   >
                                     <RouteLink
                                       to={`/home/tv_show_details/${r.id}`}
-                                      position="relative"
+                                      position='relative'
                                       w={'250px'}
                                     >
                                       <Image
@@ -562,7 +562,7 @@ export default function UserProfile() {
                                           'https://image.tmdb.org/t/p/w300' +
                                           r.posterImg
                                         }
-                                        borderRadius="0.5vh"
+                                        borderRadius='0.5vh'
                                       ></Image>
                                     </RouteLink>
                                   </Box>
@@ -573,8 +573,8 @@ export default function UserProfile() {
                                     maxW={'260px'}
                                     key={index}
                                     m={'1vh'}
-                                    mt="1vh"
-                                    transition="0.4s"
+                                    mt='1vh'
+                                    transition='0.4s'
                                     _hover={{
                                       transform: 'scale(1.07)',
                                       transition: '0.8s',
@@ -582,15 +582,18 @@ export default function UserProfile() {
                                   >
                                     <RouteLink
                                       to={`/home/movie_details/${r.id}`}
-                                      position="relative"
+                                      position='relative'
                                       w={'250px'}
                                     >
                                       <Image
                                         src={
+                                          // 'https://image.tmdb.org/t/p/w300' +
+                                          // r.posterImg
+                                          // change src removing from the string "https://image.tmdb.org/t/p/originalhttps://image.tmdb.org/t/p/original":
                                           'https://image.tmdb.org/t/p/w300' +
-                                          r.posterImg
+                                          r.posterImg.slice(37)
                                         }
-                                        borderRadius="0.5vh"
+                                        borderRadius='0.5vh'
                                       ></Image>
                                     </RouteLink>
                                   </Box>
@@ -613,7 +616,7 @@ export default function UserProfile() {
                           >
                             Go to{' '}
                             <Button variant={'link'} color={' #2ecc71 '}>
-                              <RouteLink to="/home">EXPLORE</RouteLink>
+                              <RouteLink to='/home'>EXPLORE</RouteLink>
                             </Button>
                           </Text>
                         </Box>
@@ -626,12 +629,12 @@ export default function UserProfile() {
                 <Box
                   borderRadius={'4px'}
                   marginBottom={'2vh'}
-                  border="solid 1px"
+                  border='solid 1px'
                   borderColor={'#424949'}
                 >
                   <Text
                     background={'#424949'}
-                    border="solid 1px"
+                    border='solid 1px'
                     borderColor={'#424949'}
                     color={'#99a3a4'}
                     fontSize={{ base: '14px', md: '16px', lg: '20px' }}
@@ -648,12 +651,12 @@ export default function UserProfile() {
                 <Box
                   borderRadius={'4px'}
                   marginBottom={'2vh'}
-                  border="solid 1px"
+                  border='solid 1px'
                   borderColor={'#424949'}
                 >
                   <Text
                     background={'#424949'}
-                    border="solid 1px"
+                    border='solid 1px'
                     borderColor={'#424949'}
                     color={'#99a3a4'}
                     fontSize={{ base: '14px', md: '16px', lg: '20px' }}
@@ -670,12 +673,12 @@ export default function UserProfile() {
                 <Box
                   borderRadius={'4px'}
                   marginBottom={'2vh'}
-                  border="solid 1px"
+                  border='solid 1px'
                   borderColor={'#424949'}
                 >
                   <Text
                     background={'#424949'}
-                    border="solid 1px"
+                    border='solid 1px'
                     borderColor={'#424949'}
                     color={'#99a3a4'}
                     fontSize={{ base: '20px', md: '30px', lg: '35px' }}
@@ -693,20 +696,20 @@ export default function UserProfile() {
                 <Box borderRadius={'4px'} marginBottom={'2vh'}>
                   {typeSub === 1 ? (
                     <Box
-                      border="solid 1px"
+                      border='solid 1px'
                       borderColor={'#424949'}
                       borderRadius={'4px'}
                     >
                       <Text
                         background={'#424949'}
-                        border="solid 1px"
+                        border='solid 1px'
                         borderColor={'#424949'}
                         color={'#99a3a4'}
                         fontSize={{ base: '20px', md: '30px', lg: '35px' }}
                       >
                         Be Premium
                       </Text>
-                      <RouteLink to="/payment/upgrade">
+                      <RouteLink to='/payment/upgrade'>
                         <Text
                           fontSize={{ base: '14px', md: '16px', lg: '20px' }}
                           color={'green'}
@@ -717,13 +720,13 @@ export default function UserProfile() {
                     </Box>
                   ) : (
                     <Box
-                      border="solid 1px"
+                      border='solid 1px'
                       borderColor={'#424949'}
                       borderRadius={'4px'}
                     >
                       <Text
                         background={'#424949'}
-                        border="solid 1px"
+                        border='solid 1px'
                         borderColor={'#424949'}
                         color={'#99a3a4'}
                         fontSize={{ base: '20px', md: '30px', lg: '35px' }}
@@ -749,8 +752,8 @@ export default function UserProfile() {
                               <AlertDialogOverlay>
                                 <AlertDialogContent>
                                   <AlertDialogHeader
-                                    fontSize="lg"
-                                    fontWeight="bold"
+                                    fontSize='lg'
+                                    fontWeight='bold'
                                   >
                                     Downgrade Account
                                   </AlertDialogHeader>
@@ -766,13 +769,15 @@ export default function UserProfile() {
                                     >
                                       Cancel
                                     </Button>
-                                    {stateButton ?                                     <Button
-                                      colorScheme="red"
-                                      onClick={downgrade}
-                                      ml={3}
-                                    >
-                                      Downgrade
-                                    </Button> : null }
+                                    {stateButton ? (
+                                      <Button
+                                        colorScheme='red'
+                                        onClick={downgrade}
+                                        ml={3}
+                                      >
+                                        Downgrade
+                                      </Button>
+                                    ) : null}
                                   </AlertDialogFooter>
                                 </AlertDialogContent>
                               </AlertDialogOverlay>
@@ -785,13 +790,13 @@ export default function UserProfile() {
                 </Box>
                 <Box
                   marginBottom={'2vh'}
-                  border="solid 1px"
+                  border='solid 1px'
                   borderColor={'#424949'}
                   borderRadius={'4px'}
                 >
                   <Text
                     background={'#424949'}
-                    border="solid 1px"
+                    border='solid 1px'
                     borderColor={'#424949'}
                     color={'#99a3a4'}
                     fontSize={{ base: '14px', md: '16px', lg: '20px' }}
@@ -810,7 +815,7 @@ export default function UserProfile() {
                     >
                       <AlertDialogOverlay>
                         <AlertDialogContent>
-                          <AlertDialogHeader fontSize="lg" fontWeight="bold">
+                          <AlertDialogHeader fontSize='lg' fontWeight='bold'>
                             Delete Account
                           </AlertDialogHeader>
 
@@ -822,7 +827,7 @@ export default function UserProfile() {
                               Cancel
                             </Button>
                             <Button
-                              colorScheme="red"
+                              colorScheme='red'
                               onClick={accDelete}
                               ml={3}
                             >
@@ -856,7 +861,7 @@ export default function UserProfile() {
                     <ModalOverlay />
                     <ModalContent
                       backgroundColor={'#222222'}
-                      shadow="0px 0.5px 8px #444444"
+                      shadow='0px 0.5px 8px #444444'
                       color={'#99a3a4'}
                     >
                       <ModalHeader>Select your Avatar</ModalHeader>
@@ -889,17 +894,17 @@ export default function UserProfile() {
                           gridTemplateColumns={'repeat(3,1fr)'}
                           gridColumnGap={'10px'}
                         >
-                          <Button colorScheme="green" onClick={handleSave}>
+                          <Button colorScheme='green' onClick={handleSave}>
                             Save
                           </Button>
                           <Button
-                            colorScheme="blue"
+                            colorScheme='blue'
                             onClick={() => handleOpenWidget()}
                           >
                             Upload
                           </Button>
                           <Button
-                            colorScheme="red"
+                            colorScheme='red'
                             mr={3}
                             onClick={handleCancelImage}
                             background={'#cd6155'}
@@ -913,7 +918,7 @@ export default function UserProfile() {
                 </>
                 <Box
                   marginBottom={'2vh'}
-                  border="solid 1px"
+                  border='solid 1px'
                   borderColor={'#424949'}
                   borderRadius={'4px'}
                 >
@@ -921,7 +926,7 @@ export default function UserProfile() {
                     background={'#424949'}
                     fontSize={{ base: '14px', md: '16px', lg: '20px' }}
                     color={'#99a3a4'}
-                    border="solid 1px"
+                    border='solid 1px'
                     borderColor={'#424949'}
                   >
                     Username
@@ -938,14 +943,14 @@ export default function UserProfile() {
                   marginBottom={'2vh'}
                   fontSize={{ base: '14px', md: '16px', lg: '20px' }}
                   color={'#99a3a4'}
-                  border="solid 1px"
+                  border='solid 1px'
                   borderColor={'#424949'}
                 >
                   <Text
                     background={'#424949'}
                     fontSize={{ base: '14px', md: '16px', lg: '20px' }}
                     color={'#99a3a4'}
-                    border="solid 1px"
+                    border='solid 1px'
                     borderColor={'#424949'}
                   >
                     Email
@@ -972,16 +977,16 @@ export default function UserProfile() {
                         marginBottom={'2vh'}
                         background={'#424949'}
                         color={'#99a3a4'}
-                        placeholder="New Username"
-                        type="text"
+                        placeholder='New Username'
+                        type='text'
                         value={input.username}
-                        name="username"
+                        name='username'
                         onChange={(e) => handleChange(e)}
                       />
                       <Popover>
                         <PopoverTrigger>
                           <Button
-                            background="#bdecb6"
+                            background='#bdecb6'
                             color={'#424949'}
                             marginRight={'5vw'}
                           >
@@ -1000,7 +1005,7 @@ export default function UserProfile() {
                             <PopoverBody>
                               <Button
                                 marginRight={'5vw'}
-                                background="#bdecb6"
+                                background='#bdecb6'
                                 color={'#424949'}
                                 onClick={updateUserInfo}
                               >

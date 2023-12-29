@@ -6,9 +6,19 @@ import {
   signOut,
   GoogleAuthProvider,
   signInWithPopup,
-  sendPasswordResetEmail
+  sendPasswordResetEmail,
 } from 'firebase/auth';
-import { doc, getDoc, setDoc, Timestamp, updateDoc, query, where, collection, getDocs } from 'firebase/firestore';
+import {
+  doc,
+  getDoc,
+  setDoc,
+  Timestamp,
+  updateDoc,
+  query,
+  where,
+  collection,
+  getDocs,
+} from 'firebase/firestore';
 import { auth, firestore } from './firebase';
 import { useDispatch } from 'react-redux';
 import { loadUserData, logOutUser } from '../../Redux/actions';
@@ -18,12 +28,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import logo from '../../Assets/logo.png';
 
-
 export const authContext = createContext();
 
 export const useAuth = () => {
   const context = useContext(authContext);
-  if (!context) throw new Error('There is not auth context');
+  if (!context) throw new Error('There is no auth context');
   return context;
 };
 
@@ -38,53 +47,52 @@ export default function AuthProvider({ children }) {
   const [stateInactive, setStateInactive] = useState(false);
 
   const signup = async (userEmail, password, displayName, error) => {
+    if (!error) {
+      let infoUser = await createUserWithEmailAndPassword(
+        auth,
+        userEmail,
+        password,
+        displayName
+      ).then((userFirebase) => userFirebase);
+      const docRef = doc(firestore, `/users/${infoUser.user.uid}`);
+      setDoc(docRef, {
+        username: displayName,
+        email: userEmail,
+        admin: false,
+        subscription: 1,
+        subscriptionDate: Timestamp.fromDate(new Date()).toDate(),
+        watchList: [],
+        stripeId: '',
+        avatar:
+          'https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png',
+        avatars: [
+          'https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png',
+        ],
+        active: true,
+        banned: false,
+        rented: [],
+      });
+      await axios.post('/email', {
+        email: userEmail,
+        user: displayName,
+      });
+      dispatch(loadUserData(infoUser.user.uid));
+    } else if (error) {
+      const userCredentials = await signInWithEmailAndPassword(
+        auth,
+        userEmail,
+        password
+      );
 
-    if(!error){
-    let infoUser = await createUserWithEmailAndPassword(
-      auth,
-      userEmail,
-      password,
-      displayName
-    ).then((userFirebase) => userFirebase);
-    const docRef = doc(firestore, `/users/${infoUser.user.uid}`);
-    setDoc(docRef, {
-      username: displayName,
-      email: userEmail,
-      admin: false,
-      subscription: 1,
-      subscriptionDate: Timestamp.fromDate(new Date()).toDate(),
-      watchList: [],
-      stripeId: '',
-      avatar:
-        'https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png',
-      avatars: [
-        'https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png',
-      ],
-      active: true,
-      banned: false,
-      rented: [],
-    });
-    await axios.post('/email', {
-      email: userEmail,
-      user: displayName,
-    });
-    dispatch(loadUserData(infoUser.user.uid));
-  } else if(error){
-    const userCredentials = await signInWithEmailAndPassword(
-      auth,
-      userEmail,
-      password
-    );
-
-    const docRef = doc(firestore, `/users/${userCredentials.user.uid}`);
-    const docSnap = await getDoc(docRef);
-    if (docSnap.exists()){
-      const userData = docSnap.data();
-      if(!userData.active) {
-        setStateInactive(true);
+      const docRef = doc(firestore, `/users/${userCredentials.user.uid}`);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        const userData = docSnap.data();
+        if (!userData.active) {
+          setStateInactive(true);
+        }
       }
     }
-  }
   };
 
   const login = async (email, password) => {
@@ -110,9 +118,8 @@ export default function AuthProvider({ children }) {
         });
       } else if (!userData.active) {
         toast({
-          title: "Register",
-          description:
-           "We don't have any user with that email",
+          title: 'Register',
+          description: "We don't have any user with that email",
           status: 'error',
           duration: 3000,
           position: 'top-center',
@@ -120,7 +127,7 @@ export default function AuthProvider({ children }) {
         });
       } else {
         dispatch(loadUserData(userCredentials.user.uid));
-        pathname.includes('start') ? navigate('/home') :  navigate(-1);
+        pathname.includes('start') ? navigate('/home') : navigate(-1);
       }
     }
   };
@@ -146,11 +153,14 @@ export default function AuthProvider({ children }) {
           position: 'top-center',
           isClosable: true,
         });
-      }else if (!userData.active) {
-        setStateInactive(true)
+      } else if (!userData.active) {
+        setStateInactive(true);
       } else {
         dispatch(loadUserData(infoUser.user.uid));
-        setTimeout(() => pathname.includes('start') ? navigate('/home') :  navigate(-1), 500);
+        setTimeout(
+          () => (pathname.includes('start') ? navigate('/home') : navigate(-1)),
+          500
+        );
       }
     } else {
       setDoc(googleRef, {
@@ -169,7 +179,7 @@ export default function AuthProvider({ children }) {
       });
       await axios.post('/email', {
         email: infoUser.user.email,
-        user: infoUser.user.displayName
+        user: infoUser.user.displayName,
       });
       dispatch(loadUserData(infoUser.user.uid));
       navigate('/register/plan');
@@ -180,9 +190,9 @@ export default function AuthProvider({ children }) {
     signOut(auth);
     dispatch(logOutUser());
   };
-  
-  function forgotPasswordFunction(email){
-    return sendPasswordResetEmail(auth, email)
+
+  function forgotPasswordFunction(email) {
+    return sendPasswordResetEmail(auth, email);
   }
 
   async function read(id) {
@@ -213,27 +223,27 @@ export default function AuthProvider({ children }) {
       isClosable: true,
     });
     setStateInactive(false);
-    navigate("/login/start")
+    navigate('/login/start');
   };
 
   const activeWithoutRecover = async () => {
     const userRef = doc(firestore, `/users/${user.uid}`);
-    const userDoc = await getDoc(userRef)
-    const userData = userDoc.data()
+    const userDoc = await getDoc(userRef);
+    const userData = userDoc.data();
 
     await updateDoc(userRef, {
-        username: userData.email,
-        email: userData.email,
-        admin: false,
-        subscription: 1,
-        subscriptionDate: Timestamp.fromDate(new Date()).toDate(),
-        watchList: [],
-        stripeId: '',
-        avatar: userData.avatars[0],
-        avatars: [userData.avatars[0]],
-        active: true,
-        banned: false,
-        rented: [],
+      username: userData.email,
+      email: userData.email,
+      admin: false,
+      subscription: 1,
+      subscriptionDate: Timestamp.fromDate(new Date()).toDate(),
+      watchList: [],
+      stripeId: '',
+      avatar: userData.avatars[0],
+      avatars: [userData.avatars[0]],
+      active: true,
+      banned: false,
+      rented: [],
     });
     toast({
       title: 'You can now have access to your account.',
@@ -244,8 +254,8 @@ export default function AuthProvider({ children }) {
       isClosable: true,
     });
     setStateInactive(false);
-    navigate("/login/start")
-  }
+    navigate('/login/start');
+  };
 
   useEffect(() => {
     onAuthStateChanged(auth, (currentUser) => {
@@ -258,8 +268,8 @@ export default function AuthProvider({ children }) {
     return (
       <Box
         alignItems={'center'}
-        display="flex"
-        justifyContent="center"
+        display='flex'
+        justifyContent='center'
         columns={{ base: 1, md: 2 }}
         spacing={{ base: 10, lg: 32 }}
         py={{ base: 10, sm: 20, lg: 32 }}
@@ -286,7 +296,9 @@ export default function AuthProvider({ children }) {
               src={logo}
             />
             <Text color={'white'}>
-              You are no longer active. We have your past account information in our database. Do you want to recover your account with all your previous information?
+              You are no longer active. We have your past account information in
+              our database. Do you want to recover your account with all your
+              previous information?
             </Text>
           </Box>
           <Box
@@ -298,7 +310,12 @@ export default function AuthProvider({ children }) {
             <Button colorScheme={'green'} onClick={activateAcc}>
               Recover
             </Button>
-            <Button marginRight={"20px"} marginLeft={"20px"} colorScheme={'orange'} onClick={activeWithoutRecover}>
+            <Button
+              marginRight={'20px'}
+              marginLeft={'20px'}
+              colorScheme={'orange'}
+              onClick={activeWithoutRecover}
+            >
               Don't recover
             </Button>
             <Button colorScheme={'red'} onClick={cancelActivateAcc}>

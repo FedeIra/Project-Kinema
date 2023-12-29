@@ -1,22 +1,21 @@
-const nodemailer = require("nodemailer");
-
+const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: 'smtp.gmail.com',
   port: 465,
   secure: true, // true for 465, false for other ports
   auth: {
-    user: "kinema.showcase@gmail.com",
-    pass: process.env.PASSWORD
+    user: 'kinemafedericoira@gmail.com',
+    pass: process.env.PASSWORD,
   },
 });
 
 const sendMail = async (email, user) => {
   const info = await transporter.sendMail({
-    from: "kinema.showcase@gmail.com",
+    from: 'kinemafedericoira@gmail.com',
     to: `${email}`,
-    subject: "Welcome to Kinema",
-    text: "Plaintext version of the message",
+    subject: 'Welcome to Kinema',
+    text: 'Plaintext version of the message',
     html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
     <head>
@@ -185,19 +184,19 @@ const sendMail = async (email, user) => {
     </table>
     </div>
     </body>
-    </html>`
+    </html>`,
   });
 
-  console.log("Message sent: %s", info.messageId);
-  return
-}
+  console.log('Message sent: %s', info.messageId);
+  return;
+};
 
 const sendMailUpgrade = async (email, user) => {
   const info = await transporter.sendMail({
-    from: "kinema.showcase@gmail.com",
+    from: 'kinemafedericoira@gmail.com',
     to: `${email}`,
-    subject: "Subscription Successfully",
-    text: "Plaintext version of the message",
+    subject: 'Subscription Successfully',
+    text: 'Plaintext version of the message',
     html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
     <head>
@@ -366,19 +365,19 @@ const sendMailUpgrade = async (email, user) => {
     </table>
     </div>
     </body>
-    </html>`
+    </html>`,
   });
 
-  console.log("Message sent: %s", info.messageId);
-  return
-}
+  console.log('Message sent: %s', info.messageId);
+  return;
+};
 
 const sendMailRent = async (email, title, img, date, user) => {
   const info = await transporter.sendMail({
-    from: "kinema.showcase@gmail.com",
+    from: 'kinemafedericoira@gmail.com',
     to: `${email}`,
-    subject: "Rent Successfully",
-    text: "Plaintext version of the message",
+    subject: 'Rent Successfully',
+    text: 'Plaintext version of the message',
     html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
     <head>
@@ -547,19 +546,19 @@ const sendMailRent = async (email, title, img, date, user) => {
     </table>
     </div>
     </body>
-    </html>`
+    </html>`,
   });
 
-  console.log("Message sent: %s", info.messageId);
-  return
-}
+  console.log('Message sent: %s', info.messageId);
+  return;
+};
 
 const sendMailContact = async (email, user, message) => {
   const info = await transporter.sendMail({
-    from: "kinema.showcase@gmail.com",
-    to: `kinema.showcase@gmail.com`,
+    from: 'kinemafedericoira@gmail.com',
+    to: `kinemafedericoira@gmail.com`,
     subject: `New message from ${user}`,
-    text: "Plaintext version of the message",
+    text: 'Plaintext version of the message',
     html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
     <head>
@@ -724,14 +723,16 @@ const sendMailContact = async (email, user, message) => {
     </table>
     </div>
     </body>
-    </html>`
+    </html>`,
   });
 
-  console.log("Message sent: %s", info.messageId);
-  return
-}
+  console.log('Message sent: %s', info.messageId);
+  return;
+};
 
-exports.sendMail = (email, user) => sendMail(email, user)
-exports.sendMailUpgrade = (email, user) => sendMailUpgrade(email, user)
-exports.sendMailRent = (email, title, img, date, user) => sendMailRent(email, title, img, date, user)
-exports.sendMailContact = (email, user, message) => sendMailContact(email, user, message)
+exports.sendMail = (email, user) => sendMail(email, user);
+exports.sendMailUpgrade = (email, user) => sendMailUpgrade(email, user);
+exports.sendMailRent = (email, title, img, date, user) =>
+  sendMailRent(email, title, img, date, user);
+exports.sendMailContact = (email, user, message) =>
+  sendMailContact(email, user, message);

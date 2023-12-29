@@ -21,6 +21,13 @@ const settings = {
   speed: 500,
   responsive: [
     {
+      breakpoint: 3000,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+      },
+    },
+    {
       breakpoint: 2000,
       settings: {
         slidesToShow: 6,
@@ -84,26 +91,26 @@ export default function CarouselTvShow({ openPlayer, movies, videoSerie }) {
   const cards = movies;
 
   return (
-    <Box w="105%" pr="7vw">
+    <Box w='105%' pr='7vw'>
       {/* CSS files for react-slick */}
       <link
-        rel="stylesheet"
-        type="text/css"
-        charSet="UTF-8"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        rel='stylesheet'
+        type='text/css'
+        charSet='UTF-8'
+        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
       />
       <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        rel='stylesheet'
+        type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
       />
       <IconButton
-        aria-label="left-arrow"
-        colorScheme="messenger"
-        borderRadius="full"
-        position="absolute"
+        aria-label='left-arrow'
+        colorScheme='messenger'
+        borderRadius='full'
+        position='absolute'
         left={side}
-        marginTop="50px"
+        marginTop='50px'
         zIndex={2}
         onClick={() => slider?.slickPrev()}
         backgroundColor={'transparent'}
@@ -114,16 +121,16 @@ export default function CarouselTvShow({ openPlayer, movies, videoSerie }) {
           backgroundColor: 'transparent',
         }}
       >
-        <IoIosArrowBack color="white" size={buttonSize} />
+        <IoIosArrowBack color='white' size={buttonSize} />
       </IconButton>
       {/* Right Icon */}
       <IconButton
-        aria-label="right-arrow"
-        colorScheme="messenger"
-        borderRadius="full"
-        position="absolute"
+        aria-label='right-arrow'
+        colorScheme='messenger'
+        borderRadius='full'
+        position='absolute'
         right={side}
-        marginTop="50px"
+        marginTop='50px'
         zIndex={2}
         onClick={() => slider?.slickNext()}
         backgroundColor={'transparent'}
@@ -134,7 +141,7 @@ export default function CarouselTvShow({ openPlayer, movies, videoSerie }) {
           backgroundColor: 'transparent',
         }}
       >
-        <IoIosArrowForward color="white" size={buttonSize} />
+        <IoIosArrowForward color='white' size={buttonSize} />
       </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
@@ -145,9 +152,9 @@ export default function CarouselTvShow({ openPlayer, movies, videoSerie }) {
                 maxW={'240px'}
                 key={index}
                 m={'2vh'}
-                mt="1vh"
-                mr="10vw"
-                transition="0.4s"
+                mt='1vh'
+                mr='10vw'
+                transition='0.4s'
                 _hover={{
                   transform: 'scale(1.07)',
                   transition: '0.8s',
@@ -155,20 +162,20 @@ export default function CarouselTvShow({ openPlayer, movies, videoSerie }) {
               >
                 <Link
                   onClick={() => openPlayer()}
-                  position="relative"
+                  position='relative'
                   w={'250px'}
                   pointerEvents={!user || user.subscription === 1 ? 'none' : ''}
                 >
                   <Box maxW={isShortThan800px ? '30vw' : '20vw'}>
-                    <Image src={m.image} borderRadius="0.5vh"></Image>
+                    <Image src={m.image} borderRadius='0.5vh'></Image>
 
                     {m.duration ? (
-                      <Text color={'white'} fontWeight="600">
+                      <Text color={'white'} fontWeight='600'>
                         {' '}
                         {m.episode_number}.{m.name} ({m.duration} min){' '}
                       </Text>
                     ) : (
-                      <Text color={'white'} fontWeight="600">
+                      <Text color={'white'} fontWeight='600'>
                         {' '}
                         {m.episode_number}.{m.name}
                       </Text>
@@ -177,7 +184,7 @@ export default function CarouselTvShow({ openPlayer, movies, videoSerie }) {
                     {isShortThan420px ? (
                       <></>
                     ) : (
-                      <Text color={'white'} noOfLines={3} fontSize="1.2vh">
+                      <Text color={'white'} noOfLines={3} fontSize='1.2vh'>
                         {m.overview}
                       </Text>
                     )}

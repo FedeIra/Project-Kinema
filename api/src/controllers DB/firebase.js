@@ -1,23 +1,34 @@
 // Import the functions for SDKs:
-const { initializeApp } = require("firebase/app");
-const { getAuth } = require("firebase/auth");
-const { getFirestore } = require("firebase/firestore");
+const { initializeApp } = require('firebase/app');
+const { getAuth } = require('firebase/auth');
+const { getFirestore } = require('firebase/firestore');
+require(`dotenv`).config();
+const {
+  API_FIREBASE_KEY,
+  API_FIREBASE_DOMAIN,
+  API_FIREBASE_DATABASE,
+  API_FIREBASE_PROJECTID,
+  API_FIREBASE_BUCKET,
+  API_FIREBASE_SENDER_ID,
+  API_FIREBASE_APP_ID,
+} = process.env;
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCOQTIpN9NOsw53K_m7xjSN7oMFOihRIhI",
-  authDomain: "first-try-6e607.firebaseapp.com",
-  projectId: "first-try-6e607",
-  storageBucket: "first-try-6e607.appspot.com",
-  messagingSenderId: "848679521149",
-  appId: "1:848679521149:web:2309eba141174fa2d25a14"
+  apiKey: API_FIREBASE_KEY,
+  authDomain: API_FIREBASE_DOMAIN,
+  databaseURL: API_FIREBASE_DATABASE,
+  projectId: API_FIREBASE_PROJECTID,
+  storageBucket: API_FIREBASE_BUCKET,
+  messagingSenderId: API_FIREBASE_SENDER_ID,
+  appId: API_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app)
-const firestore = getFirestore(app)
+const auth = getAuth(app);
+const firestore = getFirestore(app);
 
 module.exports = {
-	app,
-	auth,
-    firestore
-}
+  app,
+  auth,
+  firestore,
+};
