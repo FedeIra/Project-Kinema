@@ -494,7 +494,7 @@ export const changeNameUser = (payload) => ({ type: CHANGE_NAME, payload });
 export const putLike = (user, content) => {
   return async function (dispatch) {
     try {
-      var json = await axios.post(`/like/?idUser=${user}&idContent=${content}`);
+      await axios.post(`/like/?idUser=${user}&idContent=${content}`);
       return dispatch({
         type: LIKE,
         payload: { user, content },
@@ -510,9 +510,7 @@ export const putLike = (user, content) => {
 export const dislike = (user, content) => {
   return async function (dispatch) {
     try {
-      var json = await axios.post(
-        `/dislike/?idUser=${user}&idContent=${content}`
-      );
+      await axios.post(`/dislike/?idUser=${user}&idContent=${content}`);
       return dispatch({
         type: DISLIKE,
         payload: { user, content },

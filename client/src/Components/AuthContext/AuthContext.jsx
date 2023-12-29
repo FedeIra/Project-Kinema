@@ -8,21 +8,11 @@ import {
   signInWithPopup,
   sendPasswordResetEmail,
 } from 'firebase/auth';
-import {
-  doc,
-  getDoc,
-  setDoc,
-  Timestamp,
-  updateDoc,
-  query,
-  where,
-  collection,
-  getDocs,
-} from 'firebase/firestore';
+import { doc, getDoc, setDoc, Timestamp, updateDoc } from 'firebase/firestore';
 import { auth, firestore } from './firebase';
 import { useDispatch } from 'react-redux';
 import { loadUserData, logOutUser } from '../../Redux/actions';
-import welcomeEmail from './welcomeEmail';
+// import welcomeEmail from './welcomeEmail';
 import { useToast, Box, Text, Button, Image } from '@chakra-ui/react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
