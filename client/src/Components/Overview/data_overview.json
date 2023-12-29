@@ -1,0 +1,56 @@
+[
+  {
+    "name": "JavaScript",
+    "role": "Front-End / Back-End",
+    "content": "JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.",
+    "avatar": "javascript.png"
+  },
+  {
+    "name": "Node.js",
+    "role": "Back-End - Rest Api",
+    "content": "Kinema uses Node.js to build its rest api alongside Express and Mongoose. Node.js is an open source development platform for executing JavaScript code on the server side.",
+    "avatar": "nodejs.png"
+  },
+  {
+    "name": "ReactJS",
+    "role": "Frontend - UI",
+    "content": "ReactJS was used for the Kinema user interface. ReactJS is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
+    "avatar": "react.png"
+  },
+  {
+    "name": "Redux",
+    "role": "Frontend - Global Storage",
+    "content": "To control global states Kinema uses Redux. Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments, and are easy to test.",
+    "avatar": "redux.png"
+  },
+  {
+    "name": "MongoDB",
+    "role": "Database",
+    "content": "Kinema uses MongoDB to store most of its content. MongoDB is a document database that offers great scalability and flexibility, and an advanced indexing and querying model.",
+    "avatar": "mongodb.png"
+  },
+  {
+    "name": "Firebase",
+    "role": "Authentication",
+    "content": "Kinema uses Firebase for user authentication and control. Includes authentication using the google login provider as well as classic email and password login methods.",
+    "avatar": "firebase.png"
+  },
+  {
+    "name": "Stripe",
+    "role": "Payment",
+    "content": "Kinema uses Stripe as a payment platform for subscriptions and content rental. Stripe is a payment services provider that lets merchants accept credit and debit cards or other payments.",
+    "avatar": "stripe.png"
+  },
+  {
+    "name": "Chakra UI",
+    "role": "UI",
+    "content": "Kinema uses Chakra UI and CSS to style the user interface. Chakra UI is a simple, modular, and accessible component library that provides the building blocks needed for apps built with React.",
+    "avatar": "chakra.png"
+  },
+  {
+    "name": "EmailJS",
+    "role": "Notifications",
+    "content": "With EmailJS Kinema sends different notifications through emails to its users. EmailJS helps to send emails using only client side technologies, no server required.",
+    "avatar": "email.png"
+  }
+]

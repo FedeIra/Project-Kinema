@@ -1,0 +1,212 @@
+[
+	{
+		"id": 238,
+		"title": "The Godfather",
+		"poster": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+		"back_poster": "/rSPw7tgCH9c6NqICZef4kZjFOQ5.jpg",
+		"rating": 8.7,
+		"release_date": "March 13, 1972",
+		"genres": [
+			"Drama",
+			"Crime"
+		]
+	},
+	{
+		"id": 278,
+		"title": "The Shawshank Redemption",
+		"poster": "/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+		"back_poster": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+		"rating": 8.7,
+		"release_date": "September 22, 1994",
+		"genres": [
+			"Drama",
+			"Crime"
+		]
+	},
+	{
+		"id": 240,
+		"title": "The Godfather Part II",
+		"poster": "/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+		"back_poster": "/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
+		"rating": 8.6,
+		"release_date": "December 19, 1974",
+		"genres": [
+			"Drama",
+			"Crime"
+		]
+	},
+	{
+		"id": 424,
+		"title": "Schindler's List",
+		"poster": "/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+		"back_poster": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+		"rating": 8.6,
+		"release_date": "December 14, 1993",
+		"genres": [
+			"Drama",
+			"History",
+			"War"
+		]
+	},
+	{
+		"id": 19404,
+		"title": "Dilwale Dulhania Le Jayenge",
+		"poster": "/2CAL2433ZeIihfX1Hb2139CX0pW.jpg",
+		"back_poster": "/vI3aUGTuRRdM7J78KIdW98LdxE5.jpg",
+		"rating": 8.6,
+		"release_date": "October 18, 1995",
+		"genres": [
+			"Comedy",
+			"Drama",
+			"Romance"
+		]
+	},
+	{
+		"id": 129,
+		"title": "Spirited Away",
+		"poster": "/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+		"back_poster": "/Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg",
+		"rating": 8.5,
+		"release_date": "July 19, 2001",
+		"genres": [
+			"Animation",
+			"Family",
+			"Fantasy"
+		]
+	},
+	{
+		"id": 667257,
+		"title": "Impossible Things",
+		"poster": "/t2Ew8NZ8Ci2kqmoecZUNQUFDJnQ.jpg",
+		"back_poster": "/bxSBOAD8AuMHYMdW3jso9npAkgt.jpg",
+		"rating": 8.5,
+		"release_date": "June 16, 2021",
+		"genres": [
+			"Family",
+			"Drama"
+		]
+	},
+	{
+		"id": 372058,
+		"title": "Your Name.",
+		"poster": "/q719jXXEzOoYaps6babgKnONONX.jpg",
+		"back_poster": "/mMtUybQ6hL24FXo0F3Z4j2KG7kZ.jpg",
+		"rating": 8.5,
+		"release_date": "August 25, 2016",
+		"genres": [
+			"Romance",
+			"Animation",
+			"Drama"
+		]
+	},
+	{
+		"id": 496243,
+		"title": "Parasite",
+		"poster": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+		"back_poster": "/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+		"rating": 8.5,
+		"release_date": "May 29, 2019",
+		"genres": [
+			"Comedy",
+			"Thriller",
+			"Drama"
+		]
+	},
+	{
+		"id": 724089,
+		"title": "Gabriel's Inferno: Part II",
+		"poster": "/x5o8cLZfEXMoZczTYWLrUo1P7UJ.jpg",
+		"back_poster": "/jtAI6OJIWLWiRItNSZoWjrsUtmi.jpg",
+		"rating": 8.5,
+		"release_date": "July 30, 2020",
+		"genres": [
+			"Romance"
+		]
+	},
+	{
+		"id": 497,
+		"title": "The Green Mile",
+		"poster": "/velWPhVMQeQKcxggNEU8YmIo52R.jpg",
+		"back_poster": "/l6hQWH9eDksNJNiXWYRkWqikOdu.jpg",
+		"rating": 8.5,
+		"release_date": "December 9, 1999",
+		"genres": [
+			"Fantasy",
+			"Drama",
+			"Crime"
+		]
+	},
+	{
+		"id": 553512,
+		"title": "Burn the Stage: The Movie",
+		"poster": "/pJKy1yvnKh8UjcuYeG3Rt35xHFA.jpg",
+		"back_poster": "/aQ7444JX7gefPhGJTlvilj3zG2S.jpg",
+		"rating": 8.5,
+		"release_date": "November 14, 2018",
+		"genres": [
+			"Music"
+		]
+	},
+	{
+		"id": 730154,
+		"title": "Your Eyes Tell",
+		"poster": "/cVn8E3Fxbi8HzYYtaSfsblYC4gl.jpg",
+		"back_poster": "/v5CEt88iDsuoMaW1Q5Msu9UZdEt.jpg",
+		"rating": 8.5,
+		"release_date": "October 22, 2020",
+		"genres": [
+			"Romance",
+			"Drama"
+		]
+	},
+	{
+		"id": 696374,
+		"title": "Gabriel's Inferno",
+		"poster": "/oyG9TL7FcRP4EZ9Vid6uKzwdndz.jpg",
+		"back_poster": "/w2uGvCpMtvRqZg6waC1hvLyZoJa.jpg",
+		"rating": 8.5,
+		"release_date": "May 28, 2020",
+		"genres": [
+			"Romance"
+		]
+	},
+	{
+		"id": 155,
+		"title": "The Dark Knight",
+		"poster": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+		"back_poster": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+		"rating": 8.5,
+		"release_date": "July 13, 2008",
+		"genres": [
+			"Drama",
+			"Action",
+			"Crime",
+			"Thriller"
+		]
+	},
+	{
+		"id": 680,
+		"title": "Pulp Fiction",
+		"poster": "/fIE3lAGcZDV1G6XM5KmuWnNsPp1.jpg",
+		"back_poster": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+		"rating": 8.5,
+		"release_date": "September 9, 1994",
+		"genres": [
+			"Thriller",
+			"Crime"
+		]
+	},
+	{
+		"id": 122,
+		"title": "The Lord of the Rings: The Return of the King",
+		"poster": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+		"back_poster": "/lXhgCODAbBXL5buk9yEmTpOoOgR.jpg",
+		"rating": 8.5,
+		"release_date": "November 30, 2003",
+		"genres": [
+			"Adventure",
+			"Fantasy",
+			"Action"
+		]
+	}
+]

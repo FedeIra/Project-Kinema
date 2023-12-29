@@ -1,0 +1,164 @@
+[
+  {
+    "id": 760161,
+    "title": "Orphan: First Kill",
+    "poster": "/pHkKbIRoCe7zIFvqan9LFSaQAde.jpg",
+    "back_poster": "/5GA3vV1aWWHTSDO5eno8V5zDo8r.jpg",
+    "rating": 6.8,
+    "release_date": "July 26, 2022",
+    "genres": ["Horror", "Thriller"]
+  },
+  {
+    "id": 852046,
+    "title": "Athena",
+    "poster": "/fenNPxVF5ERy0CSyVruuEg959Hg.jpg",
+    "back_poster": "/ghsPsvM0sEztdNT4kUlTsBF2LEF.jpg",
+    "rating": 6.6,
+    "release_date": "September 8, 2022",
+    "genres": ["Drama", "Action", "Thriller"]
+  },
+  {
+    "id": 916605,
+    "title": "The Infernal Machine",
+    "poster": "/bSqpOGzaKBdGkBLmcm1JJIVryYy.jpg",
+    "back_poster": "/7AiIrnDMaOhPrw9elJ5NNjijTW4.jpg",
+    "rating": 6.9,
+    "release_date": "September 22, 2022",
+    "genres": ["Thriller", "Mystery"]
+  },
+  {
+    "id": 436270,
+    "title": "Black Adam",
+    "poster": "/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg",
+    "back_poster": "/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg",
+    "rating": 8.4,
+    "release_date": "October 18, 2022",
+    "genres": ["Action", "Fantasy", "Adventure"]
+  },
+  {
+    "id": 760741,
+    "title": "Beast",
+    "poster": "/xIGr7UHsKf0URWmyyd5qFMAq4d8.jpg",
+    "back_poster": "/2k9tBql5GYH328Krj66tDT9LtFZ.jpg",
+    "rating": 7,
+    "release_date": "August 10, 2022",
+    "genres": ["Thriller", "Adventure", "Horror"]
+  },
+  {
+    "id": 717728,
+    "title": "Jeepers Creepers: Reborn",
+    "poster": "/aGBuiirBIQ7o64FmJxO53eYDuro.jpg",
+    "back_poster": "/tIX6j3NzadlwGcJ52nuWdmtOQkg.jpg",
+    "rating": 5.8,
+    "release_date": "September 14, 2022",
+    "genres": ["Horror", "Thriller", "Mystery"]
+  },
+  {
+    "id": 744276,
+    "title": "After Ever Happy",
+    "poster": "/6b7swg6DLqXCO3XUsMnv6RwDMW2.jpg",
+    "back_poster": "/rwgmDkIEv8VjAsWx25ottJrFvpO.jpg",
+    "rating": 7,
+    "release_date": "August 23, 2022",
+    "genres": ["Romance", "Drama"]
+  },
+  {
+    "id": 366672,
+    "title": "Paws of Fury: The Legend of Hank",
+    "poster": "/wMDUDwAArpfGdtTTZ25SfwngGwt.jpg",
+    "back_poster": "/92PJmMopfy64VYjd0HvIQaHGZX0.jpg",
+    "rating": 6.7,
+    "release_date": "July 13, 2022",
+    "genres": ["Family", "Comedy", "Animation", "Action"]
+  },
+  {
+    "id": 882598,
+    "title": "Smile",
+    "poster": "/aPqcQwu4VGEewPhagWNncDbJ9Xp.jpg",
+    "back_poster": "/olPXihyFeeNvnaD6IOBltgIV1FU.jpg",
+    "rating": 6.7,
+    "release_date": "September 22, 2022",
+    "genres": ["Horror", "Mystery", "Thriller"]
+  },
+  {
+    "id": 610150,
+    "title": "Dragon Ball Super: Super Hero",
+    "poster": "/rugyJdeoJm7cSJL1q4jBpTNbxyU.jpg",
+    "back_poster": "/ugS5FVfCI3RV0ZwZtBV3HAV75OX.jpg",
+    "rating": 8,
+    "release_date": "June 10, 2022",
+    "genres": ["Animation", "Science Fiction", "Action"]
+  },
+  {
+    "id": 1023086,
+    "title": "Devil's Workshop",
+    "poster": "/fJQr6E6tUwihQuQgTSDUkKsrVZA.jpg",
+    "back_poster": "/3f2xX0r2x0RbMR2spoqkdUIhuuj.jpg",
+    "rating": 6.1,
+    "release_date": "September 29, 2022",
+    "genres": ["Horror"]
+  },
+  {
+    "id": 539681,
+    "title": "DC League of Super-Pets",
+    "poster": "/r7XifzvtezNt31ypvsmb6Oqxw49.jpg",
+    "back_poster": "/qaTzVAW1u16WFNsepjCrilBuInc.jpg",
+    "rating": 7.5,
+    "release_date": "July 26, 2022",
+    "genres": ["Animation", "Action", "Family", "Comedy", "Science Fiction"]
+  },
+  {
+    "id": 634649,
+    "title": "Spider-Man: No Way Home",
+    "poster": "/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg",
+    "back_poster": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+    "rating": 8,
+    "release_date": "December 14, 2021",
+    "genres": ["Action", "Adventure", "Science Fiction"]
+  },
+  {
+    "id": 361743,
+    "title": "Top Gun: Maverick",
+    "poster": "/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+    "back_poster": "/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
+    "rating": 8.4,
+    "release_date": "May 23, 2022",
+    "genres": ["Action", "Drama"]
+  },
+  {
+    "id": 999205,
+    "title": "Stowaway",
+    "poster": "/1RmugOkBFU5eXu1dbr1zdxChLfQ.jpg",
+    "back_poster": "/tviTAFuCFRLElylvBAMPjdRnCDZ.jpg",
+    "rating": 6.4,
+    "release_date": "August 30, 2022",
+    "genres": ["Thriller", "Action"]
+  },
+  {
+    "id": 756999,
+    "title": "The Black Phone",
+    "poster": "/lr11mCT85T1JanlgjMuhs9nMht4.jpg",
+    "back_poster": "/AfvIjhDu9p64jKcmohS4hsPG95Q.jpg",
+    "rating": 7.9,
+    "release_date": "June 21, 2022",
+    "genres": ["Horror", "Thriller"]
+  },
+  {
+    "id": 843633,
+    "title": "White Elephant",
+    "poster": "/lG56H40Y1BuHSPoWtEgDJsSgDBZ.jpg",
+    "back_poster": "/cyV2syN5zRQwU6BmWMyMFyjRLow.jpg",
+    "rating": 6.5,
+    "release_date": "June 2, 2022",
+    "genres": ["Action", "Crime", "Thriller"]
+  },
+  {
+    "id": 597922,
+    "title": "The Greatest Beer Run Ever",
+    "poster": "/ggf37TpcKaxwguhvtNn6MQpyqBn.jpg",
+    "back_poster": "/z8KsgBFtduX5bS1yVkjoGo4L7KJ.jpg",
+    "rating": 7.8,
+    "release_date": "September 29, 2022",
+    "genres": ["Drama", "Comedy", "War"]
+  }
+]

@@ -1,0 +1,296 @@
+.background {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background: black;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: transparent;
+  position: relative;
+  z-index: 3;
+}
+
+.list {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (min-width: 500px) {
+  .list {
+    margin-top: 2.5rem;
+  }
+}
+
+.logo {
+  width: 220px;
+  height: 180px;
+  margin-top: -20px;
+}
+
+.nav__toggle {
+  display: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-image: url('../../Assets/menu.png');
+  background-repeat: no-repeat;
+}
+
+.nav__close {
+  position: fixed;
+  display: none;
+  background-image: url('../../Assets/close.png');
+  background-repeat: no-repeat;
+}
+
+.sign {
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.container_landing {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 65%;
+  z-index: 2;
+  justify-content: flex-start;
+  margin-top: 20vh;
+  align-items: center;
+}
+
+.container_button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.button_detail {
+  cursor: pointer;
+  padding: 10px 32px;
+  border: none;
+  background: linear-gradient(
+      0deg,
+      rgba(10, 22, 19, 0.13),
+      rgba(10, 22, 19, 0.13)
+    ),
+    #1cdaff;
+  border-radius: 10px;
+  color: white;
+}
+
+.button_detail:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.main_text {
+  color: #ffffff;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  width: max-content;
+  overflow: hidden;
+  height: 90vh;
+  z-index: 0;
+}
+
+.movie_list {
+  width: 300px;
+  background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+    url('../../Assets/avatar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 65%;
+}
+
+.movie_list2 {
+  width: 320px;
+  background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+    url('../../Assets/avengers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25%;
+}
+
+.movie_list3 {
+  width: 220px;
+  background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+    url('../../Assets/Spider-man-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 32%;
+}
+
+.movie_list4 {
+  width: 220px;
+  background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+    url('../../Assets/juman.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 42%;
+}
+
+.movie_list5 {
+  width: 220px;
+  background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+    url('../../Assets/blackpanter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.movie_list6 {
+  width: 320px;
+  background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+    url('../../Assets/aquaman.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 52%;
+}
+
+.movie_list7 {
+  width: 320px;
+  background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+    url('../../Assets/venom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 48%;
+}
+
+.movie_list_collage {
+  margin-top: 110px;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+    url('../../Assets/landing-bg-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top_blur {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+
+  background: linear-gradient(180deg, #030614 0%, rgba(3, 6, 20, 0) 100%);
+
+  z-index: 1;
+}
+
+.bottom_blur {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(180deg, #030614 0%, rgba(3, 6, 20, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  z-index: 1;
+}
+
+.enjoy {
+  margin-top: 50px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+h3 {
+  color: white;
+}
+
+@media (max-width: 440px) {
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__close {
+    display: block;
+    height: 48px;
+    top: 40px;
+    right: 20px;
+  }
+
+  .logo {
+    margin-left: 0;
+    width: 120px;
+    height: 120px;
+  }
+
+  .movie_list,
+  .movie_list2,
+  .movie_list3,
+  .movie_list4,
+  .movie_list5,
+  .movie_list6,
+  .movie_list7 {
+    display: none;
+  }
+
+  .movies {
+    height: 100%;
+  }
+
+  .movie_list_collage {
+    margin-top: 0;
+    visibility: visible;
+    background-position: center;
+
+    background-image: linear-gradient(180deg, #0000008c 20%, #0000008c 100%),
+      url('../../Assets/landing-bg-mobile.jpg');
+  }
+
+  .top_blur {
+    height: 200px;
+  }
+
+  .close {
+    display: block;
+    cursor: pointer;
+  }
+
+  .list {
+    display: none;
+    position: fixed;
+    background-color: hsla(180, 12%, 8%, 0.96);
+    top: 0;
+    right: 0;
+    width: 40%;
+    font-size: 16px;
+    border-left: 2px solid gray;
+    flex-direction: column-reverse;
+    height: 100%;
+    transition: 10s opacity;
+    padding-top: 90px;
+    padding-left: 20px;
+    gap: 2em;
+  }
+
+  .sign {
+    margin-top: 20px;
+  }
+
+  .bottom_blur {
+    display: none;
+  }
+
+  .main_text {
+    text-align: center;
+    font-weight: bold;
+  }
+}

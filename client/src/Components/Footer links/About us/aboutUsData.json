@@ -1,0 +1,79 @@
+[
+  {
+    "fullName": "Juan Francisco Drewanz",
+    "profilePic": "Juan.jpeg",
+    "skill": "Analytical thinking",
+    "description": "Software engineer with experience in Project Management and Management Consulting. Loves kitesurfing and playing the piano.",
+    "education": "Civil Engineer | MBA | Fullstack Developer",
+    "location": "Concordia, Argentina",
+    "email": "juandrewanz@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/juan-francisco-drewanz-7b099226/",
+    "github": "https://github.com/Quico88"
+  },
+  {
+    "fullName": "Gustavo Elías Engers",
+    "profilePic": "Gus.jpeg",
+    "skill": "Data processing",
+    "description": "Big fun of computers since childhood, has been immersing in the IT world ever since. Loves 'mate'.",
+    "education": "Master builder | Fullstack Developer",
+    "location": "Misiones, Argentina",
+    "email": "gustavoengers6441@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/gustavo-elias-engers-965788223/",
+    "github": "https://github.com/GusEngers"
+  },
+  {
+    "fullName": "Federico Irarrazaval",
+    "profilePic": "Fede.jpg",
+    "skill": "Problem-solving",
+    "description": "Full Stack web developer. Curious and self-taught. I have passion for technology and gaming, and enjoy doing archery and reading.",
+    "education": "Fullstack Developer | Master's degree in Law",
+    "location": "Buenos Aires, Argentina",
+    "email": "fedeirar@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/federico-irarr%C3%A1zaval-314b89a1/",
+    "github": "https://github.com/FedeIra"
+  },
+  {
+    "fullName" : "Pablo Carro",
+    "profilePic": "Pablo.jpg",
+    "skill": "Optimization",
+    "description": "Team player, organized and proactive. I love martial arts and video games.",
+    "education": "Fullstack Developer",
+    "location": "Arrecifes, Argentina",
+    "email": "pablo.carro@live.com",
+    "linkedin": "https://www.linkedin.com/in/pablocarroit/",
+    "github": "https://github.com/pablocalu"
+  },
+  {
+     "fullName": "Pedro Martinez",
+    "profilePic": "Pedro.jpeg",
+    "skill": "Resilient, Learnability",
+    "description": "Self-taught person who likes to learn. I love sports, programming and videogames.",
+    "education": "Construction Technician | Full Stack Web Developer",
+    "location": "Nayarit, Mexico",
+    "email": "pedrocmartinez568@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/pedro-martinez-a7a615239/",
+    "github": "https://github.com/PedroMtz8"
+  },
+  {
+    "fullName": "Matias Tonelli",
+    "profilePic": "Mati.jpeg",
+    "skill": "‍Multi-Tasking, Problem solving",
+    "description": "Full Stack developer, love programming and videogames, always looking for new knowledge",
+    "education": "Full Stack developer",
+    "location": "Buenos Aires, Argentina",
+    "email": "matias.tonelli@outlook.com",
+    "linkedin": "https://www.linkedin.com/in/matias-tonelli/",
+    "github": "https://github.com/MatiTonelli"
+  },
+  {
+    "fullName": "Adriel Lopez Decalle",
+    "profilePic": "Adriel.jpeg",
+    "skill": "Creativity",
+    "description": "Full Stack maker & UI / UX Designer , love hip hop music, football and gaming",
+    "education": "Fullstack Developer | Systems Analyst",
+    "location": "Buenos Aires, Argentina",
+    "email": "adrielisaias1@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/adriel-isa%C3%ADas-lopez-decalle-8b152b231/",
+    "github": "https://github.com/AdrielLopez"
+  }
+]

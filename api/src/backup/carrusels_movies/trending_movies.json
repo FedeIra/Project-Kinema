@@ -1,0 +1,155 @@
+[
+  {
+    "id": 779782,
+    "title": "The School for Good and Evil",
+    "poster": "/6oZeEu1GDILdwezmZ5e2xWISf1C.jpg",
+    "back_poster": "/tSxbUnrnWlR5dQvUgqMI7sACmFD.jpg",
+    "rating": 7.202,
+    "release_date": "October 18, 2022",
+    "genres": ["Fantasy", "Action", "Drama"]
+  },
+  {
+    "id": 436270,
+    "title": "Black Adam",
+    "poster": "/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg",
+    "back_poster": "/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg",
+    "rating": 8.2,
+    "release_date": "October 18, 2022",
+    "genres": ["Action", "Fantasy", "Adventure"]
+  },
+  {
+    "id": 848791,
+    "title": "The Stranger",
+    "poster": "/bqhU34c2mWSUiOPP7vHP7Vdc112.jpg",
+    "back_poster": "/u6WzMRpTkGzIlfsPNtDfIBfEy9z.jpg",
+    "rating": 7.25,
+    "release_date": "September 29, 2022",
+    "genres": ["Crime", "Drama", "Mystery", "Thriller"]
+  },
+  {
+    "id": 634649,
+    "title": "Spider-Man: No Way Home",
+    "poster": "/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg",
+    "back_poster": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+    "rating": 8,
+    "release_date": "December 14, 2021",
+    "genres": ["Action", "Adventure", "Science Fiction"]
+  },
+  {
+    "id": 718930,
+    "title": "Bullet Train",
+    "poster": "/tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg",
+    "back_poster": "/83oeqwN64WtafGoITvsOzjKIQaM.jpg",
+    "rating": 7.512,
+    "release_date": "July 2, 2022",
+    "genres": ["Action", "Comedy", "Thriller"]
+  },
+  {
+    "id": 361743,
+    "title": "Top Gun: Maverick",
+    "poster": "/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+    "back_poster": "/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
+    "rating": 8.353,
+    "release_date": "May 23, 2022",
+    "genres": ["Action", "Drama"]
+  },
+  {
+    "id": 864959,
+    "title": "The Curse of Bridge Hollow",
+    "poster": "/t6P9l6tcVnWLS1ADUAfkUCGQhm0.jpg",
+    "back_poster": "/cuAUhb0aYQ9PsdU7EN3L2p1d3Ox.jpg",
+    "rating": 7.132,
+    "release_date": "October 13, 2022",
+    "genres": ["Adventure", "Comedy", "Horror", "Family"]
+  },
+  {
+    "id": 826769,
+    "title": "Rosaline",
+    "poster": "/jQHrbzVy6ptopxqUohV6PcmmVcY.jpg",
+    "back_poster": "/s4ZEtO5Lo444WJ5lBVyYARAq08.jpg",
+    "rating": 7.507,
+    "release_date": "October 10, 2022",
+    "genres": ["Comedy", "Romance"]
+  },
+  {
+    "id": 879444,
+    "title": "Accident Man: Hitman's Holiday",
+    "poster": "/zC5SJ18v9AhiHoFOIzZASqSxsPh.jpg",
+    "back_poster": "/cpsMrWoJMaY0YaRax4lixUITuFm.jpg",
+    "rating": 5.9,
+    "release_date": "October 13, 2022",
+    "genres": ["Action", "Comedy", "Crime"]
+  },
+  {
+    "id": 894205,
+    "title": "Werewolf by Night",
+    "poster": "/jmv7EbqBuEk4V1U7OoSBaxkwawO.jpg",
+    "back_poster": "/pfAZP7JvTTxqgq7n6A1OYgkAdEW.jpg",
+    "rating": 7.251,
+    "release_date": "September 24, 2022",
+    "genres": ["Action", "Fantasy", "Horror", "Tv Movie"]
+  },
+  {
+    "id": 762504,
+    "title": "Nope",
+    "poster": "/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg",
+    "back_poster": "/tXRl6ijm4cnLp47icO9SPp1PT5g.jpg",
+    "rating": 7,
+    "release_date": "July 19, 2022",
+    "genres": ["Horror", "Mystery", "Science Fiction", "Thriller"]
+  },
+  {
+    "id": 616037,
+    "title": "Thor: Love and Thunder",
+    "poster": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+    "back_poster": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+    "rating": 6.733,
+    "release_date": "July 5, 2022",
+    "genres": ["Fantasy", "Action", "Comedy"]
+  },
+  {
+    "id": 438148,
+    "title": "Minions: The Rise of Gru",
+    "poster": "/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg",
+    "back_poster": "/vFGDYJZA7NenGR1OaEGz0pKKFEs.jpg",
+    "rating": 7.548,
+    "release_date": "June 28, 2022",
+    "genres": ["Animation", "Family"]
+  },
+  {
+    "id": 886396,
+    "title": "Batman and Superman: Battle of the Super Sons",
+    "poster": "/nBaVsNvUxIuvhPw3xTaAJIw8me4.jpg",
+    "back_poster": "/iQJ1gC2p6yn5wnBEklhPaEFJ3n1.jpg",
+    "rating": 8.3,
+    "release_date": "October 16, 2022",
+    "genres": ["Animation", "Action", "Science Fiction"]
+  },
+  {
+    "id": 882598,
+    "title": "Smile",
+    "poster": "/aPqcQwu4VGEewPhagWNncDbJ9Xp.jpg",
+    "back_poster": "/olPXihyFeeNvnaD6IOBltgIV1FU.jpg",
+    "rating": 6.75,
+    "release_date": "September 22, 2022",
+    "genres": ["Horror", "Mystery", "Thriller"]
+  },
+  {
+    "id": 633657,
+    "title": "The Good House",
+    "poster": "/a0tSiNq9Ze4ucWFU6oRPd4OEGJr.jpg",
+    "back_poster": "/rUh1IQCuMrvkaKQrovh97T3hRz.jpg",
+    "rating": 8.2,
+    "release_date": "September 28, 2022",
+    "genres": ["Drama", "Comedy"]
+  },
+  {
+    "id": 551271,
+    "title": "Medieval",
+    "poster": "/4njdAkiBdC5LnFApeXSkFQ78GdT.jpg",
+    "back_poster": "/aQOWnw3HydsCQZ10O0wvxFOaWc3.jpg",
+    "rating": 7.1,
+    "release_date": "September 7, 2022",
+    "genres": ["History", "Drama", "Action"]
+  }
+]

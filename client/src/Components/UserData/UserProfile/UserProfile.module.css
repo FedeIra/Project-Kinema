@@ -1,0 +1,27 @@
+.tabla_user{
+    height: 75vh;
+    width: 450px;
+}
+.selectedImg{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.selectedImg2{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 0.5px solid  #82e0aa ;
+    
+}
+
+
+
+
+@media (max-width: 400px){
+    .tabla_user{
+        height: 55vh;
+        width: 300px;
+    }
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "id": 760161,
+    "title": "Orphan: First Kill",
+    "poster": "/pHkKbIRoCe7zIFvqan9LFSaQAde.jpg",
+    "back_poster": "/5GA3vV1aWWHTSDO5eno8V5zDo8r.jpg",
+    "rating": 6.8,
+    "release_date": "July 26, 2022",
+    "genres": ["Horror", "Thriller"]
+  },
+  {
+    "id": 575322,
+    "title": "Project Gemini",
+    "poster": "/aVLV38txajXhEy2qNEClPIsDbAH.jpg",
+    "back_poster": "/etP5jwlwvkNhwe7jnI2AyA6ZKrR.jpg",
+    "rating": 5.5,
+    "release_date": "January 5, 2022",
+    "genres": ["Science Fiction"]
+  },
+  {
+    "id": 718930,
+    "title": "Bullet Train",
+    "poster": "/tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg",
+    "back_poster": "/83oeqwN64WtafGoITvsOzjKIQaM.jpg",
+    "rating": 7.5,
+    "release_date": "July 2, 2022",
+    "genres": ["Action", "Comedy", "Thriller"]
+  },
+  {
+    "id": 960704,
+    "title": "Fullmetal Alchemist: The Final Alchemy",
+    "poster": "/AeyiuQUUs78bPkz18FY3AzNFF8b.jpg",
+    "back_poster": "/5hoS3nEkGGXUfmnu39yw1k52JX5.jpg",
+    "rating": 6.4,
+    "release_date": "June 23, 2022",
+    "genres": ["Action", "Adventure", "Fantasy"]
+  },
+  {
+    "id": 642885,
+    "title": "Hocus Pocus 2",
+    "poster": "/7ze7YNmUaX81ufctGqt0AgHxRtL.jpg",
+    "back_poster": "/iS9U3VHpPEjTWnwmW56CrBlpgLj.jpg",
+    "rating": 7.7,
+    "release_date": "September 26, 2022",
+    "genres": ["Fantasy", "Comedy", "Family"]
+  },
+  {
+    "id": 852046,
+    "title": "Athena",
+    "poster": "/fenNPxVF5ERy0CSyVruuEg959Hg.jpg",
+    "back_poster": "/ghsPsvM0sEztdNT4kUlTsBF2LEF.jpg",
+    "rating": 6.6,
+    "release_date": "September 8, 2022",
+    "genres": ["Drama", "Action", "Thriller"]
+  },
+  {
+    "id": 916605,
+    "title": "The Infernal Machine",
+    "poster": "/bSqpOGzaKBdGkBLmcm1JJIVryYy.jpg",
+    "back_poster": "/7AiIrnDMaOhPrw9elJ5NNjijTW4.jpg",
+    "rating": 6.9,
+    "release_date": "September 22, 2022",
+    "genres": ["Thriller", "Mystery"]
+  },
+  {
+    "id": 791155,
+    "title": "Secret Headquarters",
+    "poster": "/8PsHogUfvjWPGdWAI5uslDhHDx7.jpg",
+    "back_poster": "/aIkG2V4UXrfkxMdJZmq30xO0QQr.jpg",
+    "rating": 6.9,
+    "release_date": "August 11, 2022",
+    "genres": ["Science Fiction", "Adventure", "Action"]
+  },
+  {
+    "id": 436270,
+    "title": "Black Adam",
+    "poster": "/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg",
+    "back_poster": "/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg",
+    "rating": 8.4,
+    "release_date": "October 18, 2022",
+    "genres": ["Action", "Fantasy", "Adventure"]
+  },
+  {
+    "id": 532639,
+    "title": "Pinocchio",
+    "poster": "/g8sclIV4gj1TZqUpnL82hKOTK3B.jpg",
+    "back_poster": "/nnUQqlVZeEGuCRx8SaoCU4XVHJN.jpg",
+    "rating": 6.7,
+    "release_date": "September 6, 2022",
+    "genres": ["Fantasy", "Adventure", "Family"]
+  },
+  {
+    "id": 886396,
+    "title": "Batman and Superman: Battle of the Super Sons",
+    "poster": "/nBaVsNvUxIuvhPw3xTaAJIw8me4.jpg",
+    "back_poster": "/iQJ1gC2p6yn5wnBEklhPaEFJ3n1.jpg",
+    "rating": 8.3,
+    "release_date": "October 16, 2022",
+    "genres": ["Animation", "Action", "Science Fiction"]
+  },
+  {
+    "id": 429473,
+    "title": "Lou",
+    "poster": "/djM2s4wSaATn4jVB33cV05PEbV7.jpg",
+    "back_poster": "/rgZ3hdzgMgYgzvBfwNEVW01bpK1.jpg",
+    "rating": 6.6,
+    "release_date": "September 22, 2022",
+    "genres": ["Action", "Thriller", "Drama"]
+  },
+  {
+    "id": 884363,
+    "title": "Togo",
+    "poster": "/vBvHFU97cmep48zbl5X85gvXCn.jpg",
+    "back_poster": "/mpw5zSakP4iBknj93viyrsUqKa8.jpg",
+    "rating": 6.8,
+    "release_date": "October 4, 2022",
+    "genres": ["Crime", "Drama"]
+  },
+  {
+    "id": 616037,
+    "title": "Thor: Love and Thunder",
+    "poster": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+    "back_poster": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+    "rating": 6.7,
+    "release_date": "July 5, 2022",
+    "genres": ["Fantasy", "Action", "Comedy"]
+  },
+  {
+    "id": 760741,
+    "title": "Beast",
+    "poster": "/xIGr7UHsKf0URWmyyd5qFMAq4d8.jpg",
+    "back_poster": "/2k9tBql5GYH328Krj66tDT9LtFZ.jpg",
+    "rating": 7,
+    "release_date": "August 10, 2022",
+    "genres": ["Thriller", "Adventure", "Horror"]
+  },
+  {
+    "id": 335795,
+    "title": "Monster High: The Movie",
+    "poster": "/tn3GWm0Erehkpur8PUuYWxGpul5.jpg",
+    "back_poster": "/sobIeWp1a3saZTBkoRTAf8sfC7J.jpg",
+    "rating": 7,
+    "release_date": "October 5, 2022",
+    "genres": ["Adventure", "Family", "Tv Movie"]
+  },
+  {
+    "id": 717728,
+    "title": "Jeepers Creepers: Reborn",
+    "poster": "/aGBuiirBIQ7o64FmJxO53eYDuro.jpg",
+    "back_poster": "/tIX6j3NzadlwGcJ52nuWdmtOQkg.jpg",
+    "rating": 5.8,
+    "release_date": "September 14, 2022",
+    "genres": ["Horror", "Thriller", "Mystery"]
+  },
+  {
+    "id": 744276,
+    "title": "After Ever Happy",
+    "poster": "/6b7swg6DLqXCO3XUsMnv6RwDMW2.jpg",
+    "back_poster": "/rwgmDkIEv8VjAsWx25ottJrFvpO.jpg",
+    "rating": 7,
+    "release_date": "August 23, 2022",
+    "genres": ["Romance", "Drama"]
+  }
+]
