@@ -1,18 +1,24 @@
 // Import the functions for SDKs:
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+// import { getFirestore } from 'firebase/firestore';
+import { initializeFirestore } from 'firebase/firestore';
 
-export const firebaseConfig = {
-  apiKey: 'probando',
-  authDomain: 'probando',
-  databaseURL: 'probando',
-  projectId: 'probando',
-  storageBucket: 'probando',
-  messagingSenderId: 'probando',
-  appId: 'probando',
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+  measurementId: '',
 };
 
-export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const firestore = getFirestore(app);
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const firestore = initializeFirestore(app, {
+  experimentalForceLongPolling: true,
+  useFetchStreams: false,
+});
+
+export { auth, firestore };

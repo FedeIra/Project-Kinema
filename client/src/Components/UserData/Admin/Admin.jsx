@@ -186,12 +186,12 @@ export default function Admin() {
           <Button
             color={'black'}
             onClick={prevPage}
-            backgroundColor="lightgray"
+            backgroundColor='lightgray'
           >
             Prev
           </Button>
           <label style={{ marginLeft: '20px', marginRight: '20px' }}>
-            <Button color={'black'} backgroundColor="lightgray">
+            <Button color={'black'} backgroundColor='lightgray'>
               {page}
             </Button>{' '}
             de {totalPaginas}
@@ -199,7 +199,7 @@ export default function Admin() {
           <Button
             color={'black'}
             onClick={nextPage}
-            backgroundColor="lightgray"
+            backgroundColor='lightgray'
           >
             Next
           </Button>
@@ -210,7 +210,7 @@ export default function Admin() {
           height={'900px'}
         >
           <Center>
-            <Table variant="simple" width={'90%'}>
+            <Table variant='simple' width={'90%'}>
               <Thead>
                 <Tr>
                   <Th fontSize={'14px'}>Photo</Th>
@@ -245,22 +245,13 @@ export default function Admin() {
                           <Td>
                             <Avatar size={'md'} src={user.avatar} />
                           </Td>
-                          <Td
-                            fontSize={'14px'}
-                            color={'gray.500'}
-                          >
+                          <Td fontSize={'14px'} color={'gray.500'}>
                             {user.email}
                           </Td>
-                          <Td
-                            fontSize={'14px'}
-                            color={'gray.500'}
-                          >
+                          <Td fontSize={'14px'} color={'gray.500'}>
                             {user.username}
                           </Td>
-                          <Td
-                            fontSize={'14px'}
-                            color={'gray.500'}
-                          >
+                          <Td fontSize={'14px'} color={'gray.500'}>
                             {user.subscriptionDate
                               .toDate()
                               .toLocaleDateString('en-US', options)}
@@ -275,8 +266,8 @@ export default function Admin() {
                             {activeOrNot}
                           </Td>
                           <Td>
-                            <Box display="flex" justifyContent="center">
-                              <Popover placement="right">
+                            <Box display='flex' justifyContent='center'>
+                              <Popover placement='right'>
                                 {({ isOpen, onClose }) => (
                                   <>
                                     <PopoverTrigger
@@ -285,10 +276,10 @@ export default function Admin() {
                                       <Button background={'lightgray'}>
                                         <Image
                                           src={prohibition}
-                                          alt="delete_image"
-                                          width="20px"
-                                          height="20px"
-                                          color="white"
+                                          alt='delete_image'
+                                          width='20px'
+                                          height='20px'
+                                          color='white'
                                         />
                                       </Button>
                                     </PopoverTrigger>
@@ -302,18 +293,18 @@ export default function Admin() {
                                         <PopoverHeader
                                           color={'black'}
                                           backgroundColor={'lightgray'}
-                                          fontWeight="bold"
-                                          fontSize="15px"
-                                          textAlign="center"
-                                          padding="10px"
+                                          fontWeight='bold'
+                                          fontSize='15px'
+                                          textAlign='center'
+                                          padding='10px'
                                         >
                                           {!user.banned
                                             ? `Are you sure you want to ban ${user.username}?`
                                             : 'Are you sure you want to lift ban?'}
                                         </PopoverHeader>
                                         <PopoverBody
-                                          display="flex"
-                                          justifyContent="space-around"
+                                          display='flex'
+                                          justifyContent='space-around'
                                         >
                                           <Button
                                             background={'#cd6155'}
@@ -354,12 +345,12 @@ export default function Admin() {
           <Button
             color={'black'}
             onClick={prevPage}
-            backgroundColor="lightgray"
+            backgroundColor='lightgray'
           >
             Prev
           </Button>
           <label style={{ marginLeft: '20px', marginRight: '20px' }}>
-            <Button color={'black'} backgroundColor="lightgray">
+            <Button color={'black'} backgroundColor='lightgray'>
               {page}
             </Button>{' '}
             de {totalPaginas}
@@ -367,7 +358,7 @@ export default function Admin() {
           <Button
             color={'black'}
             onClick={nextPage}
-            backgroundColor="lightgray"
+            backgroundColor='lightgray'
           >
             Next
           </Button>

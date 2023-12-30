@@ -77,19 +77,19 @@ export default function UserComments() {
 
   return (
     <Box
-      border="1px"
-      borderColor="gray.800"
-      backgroundColor="gray.700"
-      color="gray.200"
+      border='1px'
+      borderColor='gray.800'
+      backgroundColor='gray.700'
+      color='gray.200'
     >
       <Box
         display={'flex'}
         alignItems={'center'}
         justifyContent={'center'}
-        backgroundColor="black"
+        backgroundColor='black'
       >
         <Button
-          backgroundColor="lightgray"
+          backgroundColor='lightgray'
           color={'black'}
           mt={5}
           ml={5}
@@ -102,18 +102,18 @@ export default function UserComments() {
       </Box>
       {loading ? (
         <Center height={'100vh'} width={'100vw'}>
-          <Image boxSize="160px" src={loader} alt="loader" />
+          <Image boxSize='160px' src={loader} alt='loader' />
         </Center>
       ) : null}
       {comments.length > 0 ? (
-        <TableContainer border="1px" borderColor="gray.500">
+        <TableContainer border='1px' borderColor='gray.500'>
           <Center>
             <Table>
               <Thead
-                backgroundColor="gray.800"
-                color="gray.300"
-                border="2px"
-                borderColor="gray.800"
+                backgroundColor='gray.800'
+                color='gray.300'
+                border='2px'
+                borderColor='gray.800'
               >
                 <Tr>
                   <Th fontSize={'14px'} color={'gray.300'}>
@@ -137,29 +137,29 @@ export default function UserComments() {
                 {comments.map((comment) => (
                   <Tr
                     key={comment.id}
-                    border="2px solid"
-                    borderColor="gray.500"
-                    backgroundColor="gray.700"
-                    color="gray.200"
+                    border='2px solid'
+                    borderColor='gray.500'
+                    backgroundColor='gray.700'
+                    color='gray.200'
                   >
                     <Td>{comment.username}</Td>
                     <Td>
                       {comment.content.length > 100 ? (
-                        <Center justifyContent="flex.start">
+                        <Center justifyContent='flex.start'>
                           <Text>{comment.content.slice(0, 100)}... </Text>
-                          <Popover placement="left">
+                          <Popover placement='left'>
                             <PopoverTrigger>
-                              <Button colorScheme="transparent" size="sm">
+                              <Button colorScheme='transparent' size='sm'>
                                 <BsFillChatDotsFill
                                   style={{ fontSize: '20px' }}
-                                  color="white"
+                                  color='white'
                                 />
                               </Button>
                             </PopoverTrigger>
                             <PopoverContent width={'auto'} height={'auto'}>
                               <PopoverArrow />{' '}
                               <PopoverCloseButton
-                                padding="5px"
+                                padding='5px'
                                 border={'1px solid'}
                               />
                               <PopoverBody
@@ -168,7 +168,7 @@ export default function UserComments() {
                                 width={'1000px'}
                                 height={'150px'}
                                 overflow={'auto'}
-                                backgroundColor="gray.700"
+                                backgroundColor='gray.700'
                               >
                                 {' '}
                                 <Text>{comment.content}</Text>{' '}
@@ -182,17 +182,17 @@ export default function UserComments() {
                     </Td>
                     <Td>{comment.date}</Td>{' '}
                     <Td>
-                      <Box display="flex" alignItems="center">
-                        <Popover placement="right" closeOnBlur={false}>
+                      <Box display='flex' alignItems='center'>
+                        <Popover placement='right' closeOnBlur={false}>
                           {({ isOpen, onClose }) => (
                             <>
                               <PopoverTrigger style={{ cursor: 'pointer' }}>
-                                <Button backgroundColor="transparent">
+                                <Button backgroundColor='transparent'>
                                   <Image
                                     src={prohibition}
-                                    alt="prohibition"
+                                    alt='prohibition'
                                     width={'20px'}
-                                    filter="invert(1)"
+                                    filter='invert(1)'
                                   />
                                 </Button>
                               </PopoverTrigger>
@@ -206,16 +206,16 @@ export default function UserComments() {
                                   <PopoverHeader
                                     color={'black'}
                                     backgroundColor={'lightgray'}
-                                    fontWeight="bold"
-                                    fontSize="15px"
-                                    textAlign="center"
-                                    padding="10px"
+                                    fontWeight='bold'
+                                    fontSize='15px'
+                                    textAlign='center'
+                                    padding='10px'
                                   >
                                     Are you sure?
                                   </PopoverHeader>
                                   <PopoverBody
-                                    display="flex"
-                                    justifyContent="space-around"
+                                    display='flex'
+                                    justifyContent='space-around'
                                   >
                                     <Button
                                       background={'#cd6155'}
@@ -245,7 +245,7 @@ export default function UserComments() {
                     </Td>
                     <Td>
                       <Button
-                        backgroundColor="transparent"
+                        backgroundColor='transparent'
                         onClick={() => handleDeleteComment(comment._id)}
                       >
                         <BsFillTrashFill />
